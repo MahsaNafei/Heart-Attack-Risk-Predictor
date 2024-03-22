@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a530941edb5c33ab449df33aba149f5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a530941edb5c33ab449df33aba149f5a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a530941edb5c33ab449df33aba149f5a = L.map(
+                "map_a530941edb5c33ab449df33aba149f5a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0d408643e1feffcc13e84fca8396cb1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a0d408643e1feffcc13e84fca8396cb1.addTo(map_a530941edb5c33ab449df33aba149f5a);
+        
+    
+            var feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_e44356dda54492e0ac9a010c9321e40c = L.marker(
+                [46.0, 2.0],
+                {}
+            ).addTo(feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a);
+        
+    
+            var icon_7114c1b3cbaa1dcef2e9cb9af237d988 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e44356dda54492e0ac9a010c9321e40c.setIcon(icon_7114c1b3cbaa1dcef2e9cb9af237d988);
+        
+    
+        var popup_fd28f8e690bb4054952045d4966273f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_400eaba57657b05fc2d5def4157f1dc1 = $(`<div id="html_400eaba57657b05fc2d5def4157f1dc1" style="width: 100.0%; height: 100.0%;">Triglycerides: 434.23766816143495</div>`)[0];
+                popup_fd28f8e690bb4054952045d4966273f5.setContent(html_400eaba57657b05fc2d5def4157f1dc1);
+            
+        
+
+        marker_e44356dda54492e0ac9a010c9321e40c.bindPopup(popup_fd28f8e690bb4054952045d4966273f5)
+        ;
+
+        
+    
+    
+            var marker_f5b1fdee7cceba59bf91dff379a87b55 = L.marker(
+                [38.0, -97.0],
+                {}
+            ).addTo(feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a);
+        
+    
+            var icon_ee352895adb29c113e785d956cfd6cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5b1fdee7cceba59bf91dff379a87b55.setIcon(icon_ee352895adb29c113e785d956cfd6cd2);
+        
+    
+        var popup_a00efc3b80a56dbbe91839e0383a09d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d16c90c3b6604af2d537918c64f00f02 = $(`<div id="html_d16c90c3b6604af2d537918c64f00f02" style="width: 100.0%; height: 100.0%;">Triglycerides: 434.1666666666667</div>`)[0];
+                popup_a00efc3b80a56dbbe91839e0383a09d8.setContent(html_d16c90c3b6604af2d537918c64f00f02);
+            
+        
+
+        marker_f5b1fdee7cceba59bf91dff379a87b55.bindPopup(popup_a00efc3b80a56dbbe91839e0383a09d8)
+        ;
+
+        
+    
+    
+            var marker_19eaf4e9c07e4b1887478fdd3e480da6 = L.marker(
+                [16.0, 106.0],
+                {}
+            ).addTo(feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a);
+        
+    
+            var icon_aa608e189d4ef5b64dc931e717b196a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_19eaf4e9c07e4b1887478fdd3e480da6.setIcon(icon_aa608e189d4ef5b64dc931e717b196a8);
+        
+    
+        var popup_035ea43946a689b36144ce6fda943efa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c79cbff77af5299fb66258e6f32a1073 = $(`<div id="html_c79cbff77af5299fb66258e6f32a1073" style="width: 100.0%; height: 100.0%;">Triglycerides: 430.3270588235294</div>`)[0];
+                popup_035ea43946a689b36144ce6fda943efa.setContent(html_c79cbff77af5299fb66258e6f32a1073);
+            
+        
+
+        marker_19eaf4e9c07e4b1887478fdd3e480da6.bindPopup(popup_035ea43946a689b36144ce6fda943efa)
+        ;
+
+        
+    
+    
+            feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a.addTo(map_a530941edb5c33ab449df33aba149f5a);
+        
+    
+            var feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_2c0f0ef212de5df04a1fd29335b32af3 = L.marker(
+                [38.0, -97.0],
+                {}
+            ).addTo(feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7);
+        
+    
+            var icon_f5a2de799f3fee3926ed2577d2e03150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c0f0ef212de5df04a1fd29335b32af3.setIcon(icon_f5a2de799f3fee3926ed2577d2e03150);
+        
+    
+        var popup_f932f9774aa2ff9cc80e1ce7ab2f68f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_719ab639cd40db51f246137b9331c59b = $(`<div id="html_719ab639cd40db51f246137b9331c59b" style="width: 100.0%; height: 100.0%;">Cholesterol: 268.85238095238094</div>`)[0];
+                popup_f932f9774aa2ff9cc80e1ce7ab2f68f9.setContent(html_719ab639cd40db51f246137b9331c59b);
+            
+        
+
+        marker_2c0f0ef212de5df04a1fd29335b32af3.bindPopup(popup_f932f9774aa2ff9cc80e1ce7ab2f68f9)
+        ;
+
+        
+    
+    
+            var marker_9d867fdc3683d4ea50ceb8a9af6ae137 = L.marker(
+                [46.0, 2.0],
+                {}
+            ).addTo(feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7);
+        
+    
+            var icon_f83d5f61c94a07995f86bae42f67901f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d867fdc3683d4ea50ceb8a9af6ae137.setIcon(icon_f83d5f61c94a07995f86bae42f67901f);
+        
+    
+        var popup_1d9ad375ee1a5148f6e88110c3cf6e1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b22e1194d83169609b1904baf03fc3 = $(`<div id="html_f5b22e1194d83169609b1904baf03fc3" style="width: 100.0%; height: 100.0%;">Cholesterol: 264.9484304932735</div>`)[0];
+                popup_1d9ad375ee1a5148f6e88110c3cf6e1f.setContent(html_f5b22e1194d83169609b1904baf03fc3);
+            
+        
+
+        marker_9d867fdc3683d4ea50ceb8a9af6ae137.bindPopup(popup_1d9ad375ee1a5148f6e88110c3cf6e1f)
+        ;
+
+        
+    
+    
+            var marker_7b5ecce23546b2d6413f016fa74d6dbd = L.marker(
+                [16.0, 106.0],
+                {}
+            ).addTo(feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7);
+        
+    
+            var icon_19a3f50103ce98fd6572f31d17c2f04c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b5ecce23546b2d6413f016fa74d6dbd.setIcon(icon_19a3f50103ce98fd6572f31d17c2f04c);
+        
+    
+        var popup_ef42604d0e94a06eeb9cb09bbfe2fe97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4a2c0603abf6b3b7427e4a93294816 = $(`<div id="html_7f4a2c0603abf6b3b7427e4a93294816" style="width: 100.0%; height: 100.0%;">Cholesterol: 264.4188235294118</div>`)[0];
+                popup_ef42604d0e94a06eeb9cb09bbfe2fe97.setContent(html_7f4a2c0603abf6b3b7427e4a93294816);
+            
+        
+
+        marker_7b5ecce23546b2d6413f016fa74d6dbd.bindPopup(popup_ef42604d0e94a06eeb9cb09bbfe2fe97)
+        ;
+
+        
+    
+    
+            feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7.addTo(map_a530941edb5c33ab449df33aba149f5a);
+        
+    
+            var feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_ededc1ab1266d1a615be43dafbcd117d = L.marker(
+                [10.0, 8.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_41ead46f8fd66ecb94fa80397edad44a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ededc1ab1266d1a615be43dafbcd117d.setIcon(icon_41ead46f8fd66ecb94fa80397edad44a);
+        
+    
+        var popup_625999a95804497a012cd65fd2ae98b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baffd5e783eac3d311f3c8ecde4c86d1 = $(`<div id="html_baffd5e783eac3d311f3c8ecde4c86d1" style="width: 100.0%; height: 100.0%;">Triglycerides: 425.3950892857143, Cholesterol: 262.20535714285717</div>`)[0];
+                popup_625999a95804497a012cd65fd2ae98b6.setContent(html_baffd5e783eac3d311f3c8ecde4c86d1);
+            
+        
+
+        marker_ededc1ab1266d1a615be43dafbcd117d.bindPopup(popup_625999a95804497a012cd65fd2ae98b6)
+        ;
+
+        
+    
+    
+            var marker_d23c161ae1718e5a16f81729b12738c8 = L.marker(
+                [15.0, 100.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_bcca174565cd77c1f3b8de50be69aa5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d23c161ae1718e5a16f81729b12738c8.setIcon(icon_bcca174565cd77c1f3b8de50be69aa5e);
+        
+    
+        var popup_ceabd129d902a528e424e0d1e7a46a93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9187b349acf38ebdbd31cfb419066e = $(`<div id="html_7f9187b349acf38ebdbd31cfb419066e" style="width: 100.0%; height: 100.0%;">Triglycerides: 429.88317757009344, Cholesterol: 262.1378504672897</div>`)[0];
+                popup_ceabd129d902a528e424e0d1e7a46a93.setContent(html_7f9187b349acf38ebdbd31cfb419066e);
+            
+        
+
+        marker_d23c161ae1718e5a16f81729b12738c8.bindPopup(popup_ceabd129d902a528e424e0d1e7a46a93)
+        ;
+
+        
+    
+    
+            var marker_f55a442effe147ba4261b67dbeac6def = L.marker(
+                [35.0, 105.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_1dd420380e7b521de7af18e0d314e896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f55a442effe147ba4261b67dbeac6def.setIcon(icon_1dd420380e7b521de7af18e0d314e896);
+        
+    
+        var popup_e5d6c9c6d5c29399a07eeda6dd4ca2c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adc8db8b8d8150b5fe6b0e1e48f51669 = $(`<div id="html_adc8db8b8d8150b5fe6b0e1e48f51669" style="width: 100.0%; height: 100.0%;">Triglycerides: 413.32339449541286, Cholesterol: 258.0091743119266</div>`)[0];
+                popup_e5d6c9c6d5c29399a07eeda6dd4ca2c8.setContent(html_adc8db8b8d8150b5fe6b0e1e48f51669);
+            
+        
+
+        marker_f55a442effe147ba4261b67dbeac6def.bindPopup(popup_e5d6c9c6d5c29399a07eeda6dd4ca2c8)
+        ;
+
+        
+    
+    
+            var marker_6dac7fffccdad32f93bf86f0ac8d9727 = L.marker(
+                [51.0, 9.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_0aa782c4cdb7729778512f036c49d410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6dac7fffccdad32f93bf86f0ac8d9727.setIcon(icon_0aa782c4cdb7729778512f036c49d410);
+        
+    
+        var popup_1028208b4b08c6eef33e4b0e067c9667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e19c5705ffac8826f9e96375c3f682ab = $(`<div id="html_e19c5705ffac8826f9e96375c3f682ab" style="width: 100.0%; height: 100.0%;">Triglycerides: 416.52830188679246, Cholesterol: 258.0607966457023</div>`)[0];
+                popup_1028208b4b08c6eef33e4b0e067c9667.setContent(html_e19c5705ffac8826f9e96375c3f682ab);
+            
+        
+
+        marker_6dac7fffccdad32f93bf86f0ac8d9727.bindPopup(popup_1028208b4b08c6eef33e4b0e067c9667)
+        ;
+
+        
+    
+    
+            var marker_c7c99d4ef7b9bcc64da1d778467fd7a6 = L.marker(
+                [4.0, -72.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_55d2d19f465bbb8fc8e1422920c0d914 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7c99d4ef7b9bcc64da1d778467fd7a6.setIcon(icon_55d2d19f465bbb8fc8e1422920c0d914);
+        
+    
+        var popup_56a24adc8fe2a72417195c2093262773 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d45e76f0e7cdf16d5f8f2e69156a3450 = $(`<div id="html_d45e76f0e7cdf16d5f8f2e69156a3450" style="width: 100.0%; height: 100.0%;">Triglycerides: 405.5221445221445, Cholesterol: 261.84615384615387</div>`)[0];
+                popup_56a24adc8fe2a72417195c2093262773.setContent(html_d45e76f0e7cdf16d5f8f2e69156a3450);
+            
+        
+
+        marker_c7c99d4ef7b9bcc64da1d778467fd7a6.bindPopup(popup_56a24adc8fe2a72417195c2093262773)
+        ;
+
+        
+    
+    
+            var marker_35b78f4da2efb3876786326e52bb0c43 = L.marker(
+                [-10.0, -55.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_8f346dcfc9deaf8721e7f5f77c625afc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35b78f4da2efb3876786326e52bb0c43.setIcon(icon_8f346dcfc9deaf8721e7f5f77c625afc);
+        
+    
+        var popup_69ac6a8e0cf4d7df2d469a46bf4dbf89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d35d8d8069d54c61383acf2743f8b74 = $(`<div id="html_6d35d8d8069d54c61383acf2743f8b74" style="width: 100.0%; height: 100.0%;">Triglycerides: 406.0, Cholesterol: 257.2705627705628</div>`)[0];
+                popup_69ac6a8e0cf4d7df2d469a46bf4dbf89.setContent(html_6d35d8d8069d54c61383acf2743f8b74);
+            
+        
+
+        marker_35b78f4da2efb3876786326e52bb0c43.bindPopup(popup_69ac6a8e0cf4d7df2d469a46bf4dbf89)
+        ;
+
+        
+    
+    
+            var marker_775e4273adb6aeef44663498aeb8f148 = L.marker(
+                [-34.0, -64.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_33372eaf17791bb191bab138261b82a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_775e4273adb6aeef44663498aeb8f148.setIcon(icon_33372eaf17791bb191bab138261b82a9);
+        
+    
+        var popup_5168cb1cf99b993af48a1de6607ad86c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f30cc50753677e23d620bfaa72c05d9 = $(`<div id="html_4f30cc50753677e23d620bfaa72c05d9" style="width: 100.0%; height: 100.0%;">Triglycerides: 419.7855626326964, Cholesterol: 261.52016985138005</div>`)[0];
+                popup_5168cb1cf99b993af48a1de6607ad86c.setContent(html_4f30cc50753677e23d620bfaa72c05d9);
+            
+        
+
+        marker_775e4273adb6aeef44663498aeb8f148.bindPopup(popup_5168cb1cf99b993af48a1de6607ad86c)
+        ;
+
+        
+    
+    
+            var marker_0a17213d2c9e9a8cd7acf4255cf6e279 = L.marker(
+                [-27.0, 133.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_2391d10abd737fd9d51583a64ebd658f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a17213d2c9e9a8cd7acf4255cf6e279.setIcon(icon_2391d10abd737fd9d51583a64ebd658f);
+        
+    
+        var popup_42d6b8251fe97566fbb3d8abf64cf9fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aadac5207089a4d6f7dad0c14d2984b5 = $(`<div id="html_aadac5207089a4d6f7dad0c14d2984b5" style="width: 100.0%; height: 100.0%;">Triglycerides: 419.87973273942094, Cholesterol: 258.9977728285078</div>`)[0];
+                popup_42d6b8251fe97566fbb3d8abf64cf9fb.setContent(html_aadac5207089a4d6f7dad0c14d2984b5);
+            
+        
+
+        marker_0a17213d2c9e9a8cd7acf4255cf6e279.bindPopup(popup_42d6b8251fe97566fbb3d8abf64cf9fb)
+        ;
+
+        
+    
+    
+            var marker_d6159ba5c162c75303e9ff530d9cd91d = L.marker(
+                [16.0, 106.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_a13f951a11ffa81b1daccff4177aa2b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d6159ba5c162c75303e9ff530d9cd91d.setIcon(icon_a13f951a11ffa81b1daccff4177aa2b3);
+        
+    
+        var popup_3d302cf06e18fc820f5f38840d6561c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ee08f479c6705a6d7225b835d130dfa = $(`<div id="html_3ee08f479c6705a6d7225b835d130dfa" style="width: 100.0%; height: 100.0%;">Triglycerides: 430.3270588235294, Cholesterol: 264.4188235294118</div>`)[0];
+                popup_3d302cf06e18fc820f5f38840d6561c0.setContent(html_3ee08f479c6705a6d7225b835d130dfa);
+            
+        
+
+        marker_d6159ba5c162c75303e9ff530d9cd91d.bindPopup(popup_3d302cf06e18fc820f5f38840d6561c0)
+        ;
+
+        
+    
+    
+            var marker_53f2d44921b91fef041f804c041a69ae = L.marker(
+                [54.0, -2.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_5ad59245b6de4348452f4888849274be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53f2d44921b91fef041f804c041a69ae.setIcon(icon_5ad59245b6de4348452f4888849274be);
+        
+    
+        var popup_c3589728d3e14ed659c7cd87a1222247 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7f02693d1e7b387774563db25c77f09 = $(`<div id="html_e7f02693d1e7b387774563db25c77f09" style="width: 100.0%; height: 100.0%;">Triglycerides: 419.6017505470459, Cholesterol: 259.8336980306346</div>`)[0];
+                popup_c3589728d3e14ed659c7cd87a1222247.setContent(html_e7f02693d1e7b387774563db25c77f09);
+            
+        
+
+        marker_53f2d44921b91fef041f804c041a69ae.bindPopup(popup_c3589728d3e14ed659c7cd87a1222247)
+        ;
+
+        
+    
+    
+            var marker_5e2990e00065d6f5061a1191c87a92d0 = L.marker(
+                [40.0, -4.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_3bf9b0dbc1f29529332c5d1b07a3d799 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e2990e00065d6f5061a1191c87a92d0.setIcon(icon_3bf9b0dbc1f29529332c5d1b07a3d799);
+        
+    
+        var popup_120184aa5855213fefa9bde4ddc397b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f108c60dc6213d5fbc119ef4b665e1ed = $(`<div id="html_f108c60dc6213d5fbc119ef4b665e1ed" style="width: 100.0%; height: 100.0%;">Triglycerides: 409.66511627906976, Cholesterol: 258.8558139534884</div>`)[0];
+                popup_120184aa5855213fefa9bde4ddc397b8.setContent(html_f108c60dc6213d5fbc119ef4b665e1ed);
+            
+        
+
+        marker_5e2990e00065d6f5061a1191c87a92d0.bindPopup(popup_120184aa5855213fefa9bde4ddc397b8)
+        ;
+
+        
+    
+    
+            var marker_3badc4611669e6003406e425aaec7b1c = L.marker(
+                [20.0, 77.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_961ea699e57cd6cd5c355352b9419e2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3badc4611669e6003406e425aaec7b1c.setIcon(icon_961ea699e57cd6cd5c355352b9419e2f);
+        
+    
+        var popup_1d9ae8c74c4e71ccf37e3a69df722731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45623cb1fb0e164855a6390626b00c6 = $(`<div id="html_f45623cb1fb0e164855a6390626b00c6" style="width: 100.0%; height: 100.0%;">Triglycerides: 396.5194174757282, Cholesterol: 256.08009708737865</div>`)[0];
+                popup_1d9ae8c74c4e71ccf37e3a69df722731.setContent(html_f45623cb1fb0e164855a6390626b00c6);
+            
+        
+
+        marker_3badc4611669e6003406e425aaec7b1c.bindPopup(popup_1d9ae8c74c4e71ccf37e3a69df722731)
+        ;
+
+        
+    
+    
+            var marker_91e75fc4dd7b74ce54b27d938b057c26 = L.marker(
+                [60.0, -95.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_c393c31403107464b078fd8498612a25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91e75fc4dd7b74ce54b27d938b057c26.setIcon(icon_c393c31403107464b078fd8498612a25);
+        
+    
+        var popup_81d55bce10415f79ed8b8710536efb40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_043d4734a878ac1382128dac591f65fa = $(`<div id="html_043d4734a878ac1382128dac591f65fa" style="width: 100.0%; height: 100.0%;">Triglycerides: 406.05227272727274, Cholesterol: 256.8477272727273</div>`)[0];
+                popup_81d55bce10415f79ed8b8710536efb40.setContent(html_043d4734a878ac1382128dac591f65fa);
+            
+        
+
+        marker_91e75fc4dd7b74ce54b27d938b057c26.bindPopup(popup_81d55bce10415f79ed8b8710536efb40)
+        ;
+
+        
+    
+    
+            var marker_7652013369d061e844173bd634437697 = L.marker(
+                [46.0, 2.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_22592fdb37a356a1ccd45b23720b1215 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7652013369d061e844173bd634437697.setIcon(icon_22592fdb37a356a1ccd45b23720b1215);
+        
+    
+        var popup_9263e4c95a30b788633e9a8b21ca83dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffbc345a0ed62b985785f4b6d37484bd = $(`<div id="html_ffbc345a0ed62b985785f4b6d37484bd" style="width: 100.0%; height: 100.0%;">Triglycerides: 434.23766816143495, Cholesterol: 264.9484304932735</div>`)[0];
+                popup_9263e4c95a30b788633e9a8b21ca83dd.setContent(html_ffbc345a0ed62b985785f4b6d37484bd);
+            
+        
+
+        marker_7652013369d061e844173bd634437697.bindPopup(popup_9263e4c95a30b788633e9a8b21ca83dd)
+        ;
+
+        
+    
+    
+            var marker_a26e9337a902dff689353c04cd40415c = L.marker(
+                [-29.0, 24.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_c28ef52348c5e74f2800e88a188674d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a26e9337a902dff689353c04cd40415c.setIcon(icon_c28ef52348c5e74f2800e88a188674d9);
+        
+    
+        var popup_423e592cd5a39a28b240c1156767baec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5bf0d8e35851ae70e593701f7be7914 = $(`<div id="html_a5bf0d8e35851ae70e593701f7be7914" style="width: 100.0%; height: 100.0%;">Triglycerides: 417.2917647058824, Cholesterol: 253.22588235294117</div>`)[0];
+                popup_423e592cd5a39a28b240c1156767baec.setContent(html_a5bf0d8e35851ae70e593701f7be7914);
+            
+        
+
+        marker_a26e9337a902dff689353c04cd40415c.bindPopup(popup_423e592cd5a39a28b240c1156767baec)
+        ;
+
+        
+    
+    
+            var marker_b35d15f3c849744ba706e1e55d54218a = L.marker(
+                [42.8333, 12.8333],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_d056159140481d12dc2c509eeb090d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b35d15f3c849744ba706e1e55d54218a.setIcon(icon_d056159140481d12dc2c509eeb090d9f);
+        
+    
+        var popup_cf908ff43733850c614e175a4526aa3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca41cd2e0bc440992440afe857d458fb = $(`<div id="html_ca41cd2e0bc440992440afe857d458fb" style="width: 100.0%; height: 100.0%;">Triglycerides: 414.02088167053364, Cholesterol: 260.6658932714617</div>`)[0];
+                popup_cf908ff43733850c614e175a4526aa3d.setContent(html_ca41cd2e0bc440992440afe857d458fb);
+            
+        
+
+        marker_b35d15f3c849744ba706e1e55d54218a.bindPopup(popup_cf908ff43733850c614e175a4526aa3d)
+        ;
+
+        
+    
+    
+            var marker_df433de80509310b72d744f7462920b3 = L.marker(
+                [37.0, 127.5],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_3a04de5cbb1d89ca4b22c02764571019 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df433de80509310b72d744f7462920b3.setIcon(icon_3a04de5cbb1d89ca4b22c02764571019);
+        
+    
+        var popup_fe8f1c130db6fafc90729459745f3614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68a7cd9736c1ebade19f991983a6bfac = $(`<div id="html_68a7cd9736c1ebade19f991983a6bfac" style="width: 100.0%; height: 100.0%;">Triglycerides: 420.09290953545235, Cholesterol: 259.6454767726161</div>`)[0];
+                popup_fe8f1c130db6fafc90729459745f3614.setContent(html_68a7cd9736c1ebade19f991983a6bfac);
+            
+        
+
+        marker_df433de80509310b72d744f7462920b3.bindPopup(popup_fe8f1c130db6fafc90729459745f3614)
+        ;
+
+        
+    
+    
+            var marker_8a66f8ef39bdcb4844f350b166eb3129 = L.marker(
+                [36.0, 138.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_9d8f045f7f1c25db12f2fbd85bace1fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a66f8ef39bdcb4844f350b166eb3129.setIcon(icon_9d8f045f7f1c25db12f2fbd85bace1fb);
+        
+    
+        var popup_7bba154d012c280f53ef9d9b4f33966d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1549b5bf9288c51a1533f5f8852a2c06 = $(`<div id="html_1549b5bf9288c51a1533f5f8852a2c06" style="width: 100.0%; height: 100.0%;">Triglycerides: 426.0323325635104, Cholesterol: 260.96535796766744</div>`)[0];
+                popup_7bba154d012c280f53ef9d9b4f33966d.setContent(html_1549b5bf9288c51a1533f5f8852a2c06);
+            
+        
+
+        marker_8a66f8ef39bdcb4844f350b166eb3129.bindPopup(popup_7bba154d012c280f53ef9d9b4f33966d)
+        ;
+
+        
+    
+    
+            var marker_be2f29df449d019f84bde8ee03a14558 = L.marker(
+                [38.0, -97.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_286921455f7da2efc64084d642b180cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be2f29df449d019f84bde8ee03a14558.setIcon(icon_286921455f7da2efc64084d642b180cb);
+        
+    
+        var popup_7866ffe6acb203420b56f872ab99fd9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb3bc540b81f0077d1fe08f5afb0dedd = $(`<div id="html_bb3bc540b81f0077d1fe08f5afb0dedd" style="width: 100.0%; height: 100.0%;">Triglycerides: 434.1666666666667, Cholesterol: 268.85238095238094</div>`)[0];
+                popup_7866ffe6acb203420b56f872ab99fd9a.setContent(html_bb3bc540b81f0077d1fe08f5afb0dedd);
+            
+        
+
+        marker_be2f29df449d019f84bde8ee03a14558.bindPopup(popup_7866ffe6acb203420b56f872ab99fd9a)
+        ;
+
+        
+    
+    
+            var marker_3feafa22682c46378a103ee8c0db9c0e = L.marker(
+                [-41.0, 174.0],
+                {}
+            ).addTo(feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685);
+        
+    
+            var icon_5f956d55afa6cc4ecc7566028c410c1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3feafa22682c46378a103ee8c0db9c0e.setIcon(icon_5f956d55afa6cc4ecc7566028c410c1d);
+        
+    
+        var popup_b7a8c091fd83a75836019f0bd378ebbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca8b0b19ed94a61ce0b759553b3327b5 = $(`<div id="html_ca8b0b19ed94a61ce0b759553b3327b5" style="width: 100.0%; height: 100.0%;">Triglycerides: 409.0206896551724, Cholesterol: 253.34022988505748</div>`)[0];
+                popup_b7a8c091fd83a75836019f0bd378ebbe.setContent(html_ca8b0b19ed94a61ce0b759553b3327b5);
+            
+        
+
+        marker_3feafa22682c46378a103ee8c0db9c0e.bindPopup(popup_b7a8c091fd83a75836019f0bd378ebbe)
+        ;
+
+        
+    
+    
+            feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685.addTo(map_a530941edb5c33ab449df33aba149f5a);
+        
+    
+            var layer_control_9803b4b9d0ac5b5936000b830a419a12_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a0d408643e1feffcc13e84fca8396cb1,
+                },
+                overlays :  {
+                    "Top 3 Triglycerides" : feature_group_fd4a1e0ca284617dd8dc0bfe95704b3a,
+                    "Top 3 Cholesterol" : feature_group_7a5d4d54c6bb4cb602df61d8fd5e4af7,
+                    "All Countries" : feature_group_ecd14ef2ae6a6dfda53c57aaf5d1f685,
+                },
+            };
+            let layer_control_9803b4b9d0ac5b5936000b830a419a12 = L.control.layers(
+                layer_control_9803b4b9d0ac5b5936000b830a419a12_layers.base_layers,
+                layer_control_9803b4b9d0ac5b5936000b830a419a12_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a530941edb5c33ab449df33aba149f5a);
+
+        
+</script>
+</html>

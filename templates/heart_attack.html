@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction App</title>
+    <!-- <link rel="stylesheet" href="../static/styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Heart Attack Risk Prediction App Powered by Machine Learning</h1>
+        <p>Harnessing the capabilities of cutting-edge machine learning algorithms, our 
+            application provides accurate predictions of heart attack risk based on comprehensive
+             health data. By leveraging advanced analytical techniques, our model considers factors 
+             such as age, cholesterol levels, blood pressure, and lifestyle habits to generate 
+             personalized risk assessments.</p>
+             <nav>
+                <ul>
+                    <li><a href="/visuals">Heart Attack Map Exploration</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section>
+        <p>
+            <b>Please fill out the form below with your relevant health information. Once 
+            you've completed the form, click the "Predict" button to receive 
+            personalized insights into your risk of experiencing a heart attack.</b>
+        </p>
+    </section>
+    <section>
+    <form action="/predict" method="post" onsubmit="return validateForm()">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1" max="130"><br><br>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        <label for="cholesterol">Cholesterol Level (Range: 100 - 300 mg/dL):</label>
+        <input type="number" id="cholesterol" name="cholesterol" required min="100" max="300"><br><br>
+
+        <label for="heart_rate">Heart Rate (Range: 40 - 200 bpm):</label>
+        <input type="number" id="heart_rate" name="heart_rate" required min="40" max="200"><br><br>
+
+        <label for="diabetes">Diabetes:</label>
+        <select id="diabetes" name="diabetes" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="family_history">Family History:</label>
+        <select id="family_history" name="family_history" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="smoking">Smoking:</label>
+        <select id="smoking" name="smoking" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="obesity">Obesity:</label>
+        <select id="obesity" name="obesity" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="alcohol_consumption">Alcohol Consumption:</label>
+        <select id="alcohol_consumption" name="alcohol_consumption" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="previous_heart_problems">Previous Heart Problems:</label>
+        <select id="previous_heart_problems" name="previous_heart_problems" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="medication_use">Medication Use:</label>
+        <select id="medication_use" name="medication_use" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label for="bmi">BMI(Body Mass Index) (Range: 18 - 40):</label>
+        <input type="number" id="bmi" name="bmi" required min="18" max="40"><br><br>
+
+        <label for="triglycerides">Triglycerides Level (Range: 31 - 800 mg/dL):</label>
+        <input type="number" id="triglycerides" name="triglycerides" required min="31" max="800"><br><br>
+
+        <label for="systolic_pressure">Systolic Pressure (Range: 90 - 180 mmHg):</label>
+        <input type="number" id="systolic_pressure" name="systolic_pressure" required min="90" max="180"><br><br>
+
+        <label for="diastolic_pressure">Diastolic Pressure (Range: 60 - 110 mmHg):</label>
+        <input type="number" id="diastolic_pressure" name="diastolic_pressure" required min="60" max="110"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</section>
+    <script src="{{ url_for('static', filename='heart_attack.js') }}"></script>
+</body>
+</html>
